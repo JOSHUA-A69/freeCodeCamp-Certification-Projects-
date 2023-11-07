@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>C Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #333;
+            color: white;
+            width: 200px;
+            height: 100%;
+            padding: 20px;
+        }
+
+        #navbar header {
+            font-size: 24px;
+        }
+
+        .nav-link {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #main-doc {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .main-section {
+            margin-bottom: 30px;
+        }
+
+        .main-section > header {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .main-section > p {
+            margin: 10px 0;
+        }
+
+        .main-section > code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+        }
+
+        .main-section ul li {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            #navbar {
+                width: 100%;
+                position: static;
+            }
+
+            #main-doc {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Documentation</header>
+        <a class="nav-link" href="#Section_1_Introduction_to_C">Section 1 Introduction to C</a>
+        <a class="nav-link" href="#Section_2_Variables">Section 2 Variables</a>
+        <a class="nav-link" href="#Section_3_Control_Structures">Section 3 Control Structures</a>
+        <a class="nav-link" href="#Section_4_Functions">Section 4 Functions</a>
+        <a class="nav-link" href="#Section_5_Pointers">Section 5 Pointers</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Section_1_Introduction_to_C">
+            <header>Section 1 Introduction to C</header>
+            <p>C is a general-purpose, procedural programming language that has been used in the development of various software applications. This section provides an introduction to C, its history, and its key characteristics.</p>
+            <code>// Sample code illustrating a basic 'Hello, World!' program in C</code>
+            <p>We'll cover the basic structure of a C program, including the inclusion of header files and the 'main' function. Additionally, you'll gain insight into the importance of comments in your code.</p>
+            <ul>
+                <li>Discuss the history and significance of C</li>
+                <li>Introduce the basic structure of a C program</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Section_2_Variables">
+            <header>Section 2 Variables</header>
+            <p>Variables are fundamental elements in C programming, used to store and manipulate data. This section delves into the world of variables, data types, and variable declaration in C.</p>
+            <code>// Sample code demonstrating the declaration and initialization of variables in C</code>
+            <p>We'll explore different data types like int, float, and char, and how to use them effectively. You'll also learn about naming conventions and best practices for variable usage.</p>
+            <ul>
+                <li>Explain the concept of variables and their importance</li>
+                <li>Discuss different data types and their usage</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Section_3_Control_Structures">
+            <header>Section 3 Control Structures</header>
+            <p>Control structures in C enable decision-making and repetition. This section provides an in-depth understanding of control structures, including if statements, loops, and switch statements.</p>
+            <code>// Sample code illustrating if statements and loops in C</code>
+            <p>We'll cover the syntax and usage of control structures to create conditional logic and repetitive tasks. Control structures are essential for controlling the flow of a C program.</p>
+            <ul>
+                <li>Explain the purpose of control structures</li>
+                <li>Provide examples of if statements and loops</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Section_4_Functions">
+            <header>Section 4 Functions</header>
+            <p>Functions are a key component of C programming, enabling code modularity and reusability. This section explores function definition, invocation, and best practices in C.</p>
+            <code>// Sample code for defining and calling functions in C</code>
+            <p>We'll discuss the structure of functions, including parameters and return values. You'll also learn about function prototypes and their importance. Functions help organize and simplify your code.</p>
+            <ul>
+                <li>Explain the concept of functions and their benefits</li>
+                <li>Provide examples of function definition and usage</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Section_5_Pointers">
+            <header>Section 5 Pointers</header>
+            <p>Pointers are a unique feature of C that allow direct memory manipulation. In this section, we'll explore pointers, memory addresses, and their role in working with data at a lower level.</p>
+            <code>// Sample code demonstrating pointer usage in C</code>
+            <p>We'll cover the basics of pointers, including declaration, initialization, and pointer arithmetic. You'll also learn how pointers are crucial for working with arrays and complex data structures.</p>
+            <ul>
+                <li>Explain the concept of pointers and their significance</li>
+                <li>Provide examples of pointer usage in C</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
