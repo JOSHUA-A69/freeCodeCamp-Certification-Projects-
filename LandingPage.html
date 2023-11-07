@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jabulani Football</title>
+    <style>
+        body {
+            background-color: #c9b18f; /* Native Esk color */
+            color: #2b2d34; /* Text color for Esk */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        ul {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: c9b18f; /* Header background color */
+            position: relative;
+            z-index: 1;
+        }
+
+     #nav-bar {
+    background-color: #c9b18f; /* Navigation bar background color */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed; /* Set the position to fixed */
+    width: 100%; /* Make it span the full width of the viewport */
+    top: 0; /* Stick it to the top of the viewport */
+}
+
+        /* Media query for specific changes at smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            #nav-bar {
+                background-color: #333;
+            }
+
+            #header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+    <script>
+        function myFunction() {
+            alert("Order confirmed!");
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#section1">Section 1</a>
+            <a class="nav-link" href="#section2">Section 2</a>
+            <a class="nav-link" href="#footer">Footer</a>
+        </nav>
+        <h1><i>Jabulani Football</i></h1>
+        <img id="header-img" src="https://matchballs.eu/sites/default/files/DSC_0399_cr_0.jpg"
+            alt="Jabulani Football Image" width="250" height="200">
+        <p><strong>2010 FIFA South Africa Football</strong></p>
+    </header>
+    <main>
+        <section id="section1">
+            <h2>Product Main Features</h2>
+            <ul>
+                <li>Grip and Flight Stability</li>
+                <li>Reduced Water Absorption</li>
+                <li>Thermally Bonded Panels</li>
+                <li>High Visibility</li>
+                <li>FIFA-Approved</li>
+            </ul>
+        </section>
+        <section id="section2">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h2>Order Now!</h2>
+                <label for="myDropdown">Sizes:</label>
+                <select id="myDropdown">
+                    <option value="option1">Kids</option>
+                    <option value="option2">Amateur</option>
+                    <option value="option3">Professional</option>
+                </select><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name here" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                <input type="submit" id="submit" value="Submit" onclick="myFunction()">
+            </form>
+            <video id="video" width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+    <footer>
+        <section id="footer">
+            <p>&copy; 2010</p>
+        </section>
+    </footer>
+</body>
+
+</html>
